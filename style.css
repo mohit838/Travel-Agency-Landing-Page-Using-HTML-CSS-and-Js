@@ -1,0 +1,82 @@
+/* Font  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&family=Volkhov:wght@700&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Volkhov", serif; */
+}
+
+.header-area {
+  background-image: url(assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.top-header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-area ul {
+  list-style: none;
+}
+
+.menu-area ul li {
+  display: inline-block;
+}
+
+.menu-area ul li a {
+  display: block;
+  margin: 7px 35px;
+  padding: 10px;
+  text-decoration: none;
+  color: #3b3b3b;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu-area ul li a:hover {
+  color: #fcfcfc;
+  background-color: black;
+}
+
+/* ul li:nth-child(6) a{
+  border: 1px solid black;
+  color: black;
+} */
+
+ul li:nth-last-child(2) a {
+  border: 2px solid #212832;
+  border-radius: 5px;
+}
+
+.header-body-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-area {
+  margin: 0 auto;
+}
+
+.text-area span {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: tomato;
+  text-transform: uppercase;
+}
+
+.text-area h1 {
+  font-family: "Volkhov", serif;
+  font-size: 80px;
+  font-weight: 700;
+}
