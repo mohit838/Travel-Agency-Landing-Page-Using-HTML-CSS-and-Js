@@ -24,6 +24,14 @@ body {
   align-items: center;
 }
 
+.logo {
+  margin-right: 30px;
+}
+
+.menu-area {
+  margin-left: 30px;
+}
+
 .menu-area ul {
   list-style: none;
 }
@@ -61,10 +69,12 @@ ul li:nth-last-child(2) a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
 .text-area {
-  margin: 0 auto;
+  margin: 0 15px;
 }
 
 .text-area span {
