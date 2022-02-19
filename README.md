@@ -1,5 +1,13 @@
-> > This is the Dribbble Free Website Template file
+## Theme Name
 
-> Theme Name: Travel Agency Landing Page UI
+> > Travel Agency Landing Page - <a href="https://www.arshakir.com/project/travel-agency-landing-page-freebie">Freebie</a>
 
-> We are just trying to make things happens as a new one!!!
+## Developing Site Image
+
+<img src="theme-main-img\Travel Agency Landing Page UI.png" alt="Travel Agency Landing Page" />
+
+## Credit Goes To
+
+> > <a href="https://www.arshakir.com/project/travel-agency-landing-page-freebie">AR Shakir</a>
+
+> > Thanks for providing some awesome freebies

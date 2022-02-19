@@ -1,0 +1,16 @@
+/* -----------------
+      Font Family 
+-------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&family=Volkhov:wght@700&display=swap");
+
+/* -----------------
+      Body Style  
+-------------------*/
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Volkhov", serif; */
+}
