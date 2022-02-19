@@ -1,16 +1,94 @@
 /* -----------------
-      Font Family 
+Font Family 
 -------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&family=Volkhov:wght@700&display=swap");
 
+/*-----------------
+VARIABLES CSS
+-------------------*/
+:root {
+  --header-height: 3rem;
+
+  /*--------Colors ---------*/
+  --title-color: #;
+  --text-color: #;
+  --text-color-light: #;
+  --container-color: #;
+  --container-color-alt: #;
+  --body-color: #;
+
+  /*-------- Font and typography ---------*/
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.13rem;
+
+  /*-------- Font weight ---------*/
+  --font-regular: 500;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /*-------- z index ---------*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
 /* -----------------
-      Body Style  
+Body Style  
 -------------------*/
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--body-font);
   /* font-family: "Poppins", sans-serif; */
   /* font-family: "Volkhov", serif; */
 }
+
+/* -----------------
+Header Area CSS
+-------------------*/
+
+/* -----------------
+Services Area CSS
+-------------------*/
+
+/* ----------------------
+Top Destination Area CSS
+-------------------------*/
+
+/* -----------------
+Booking Area CSS
+-------------------*/
+
+/* -----------------
+Testimonial Area CSS 
+-------------------*/
+
+/* -----------------
+Client Area CSS
+-------------------*/
+
+/* -----------------
+Subcription Area CSS
+-------------------*/
+
+/* -----------------
+Footer Area CSS
+-------------------*/
