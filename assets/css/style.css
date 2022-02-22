@@ -50,7 +50,7 @@ Header Area CSS
 }
 
 .nav-item {
-  margin: 0 15px;
+  margin: 0 25px;
 }
 
 .nav-item:nth-last-child(2) {
@@ -65,6 +65,33 @@ Header Area CSS
 .nav-link:hover {
   color: #fff;
   background-color: black;
+}
+
+.header-img img {
+  text-align: center;
+}
+
+.head-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.head-text span {
+  color: tomato;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.head-text h1 {
+  font-family: "Volkhov", serif;
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.head-text p {
+  text-align: justify;
 }
 
 /* -----------------
