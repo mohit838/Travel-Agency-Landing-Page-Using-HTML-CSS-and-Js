@@ -36,7 +36,7 @@ Header Area CSS
 -------------------*/
 .header-area {
   background-image: url("../img/background.png");
-  height: 100vh;
+  height: 89vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,7 +78,7 @@ Header Area CSS
   justify-content: center;
 }
 
-.head-text span {
+.head-text-title {
   color: tomato;
   letter-spacing: 1px;
   margin-bottom: 5px;
@@ -92,6 +92,16 @@ Header Area CSS
 
 .head-text p {
   text-align: justify;
+}
+
+.text-rib {
+  position: relative;
+}
+
+.decor-line {
+  position: absolute;
+  margin: 75px 0 0 -265px;
+  z-index: -1;
 }
 
 /* -----------------
