@@ -1,10 +1,22 @@
 /* -----------------
 Font Family 
 -------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&family=Volkhov:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Volkhov:wght@400;700&display=swap");
+
+/* -----------------
+Variables 
+----------------- */
+:root {
+  --main-color: #212832;
+  --data-title-color: #5e6282;
+  --shadow: 0 0 15px black, 0.25;
+  --body-font: "Poppins", sans-serif;
+  --title-font: "Volkhov", serif;
+  scroll-behavior: smooth;
+}
 
 /* ----------------
-Common CSS
+Gobal CSS
 ------------------- */
 
 ul {
@@ -19,6 +31,110 @@ img {
   vertical-align: middle;
 }
 
+h1 {
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+h2 {
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+p {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.sec-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  margin: 0 0 60px;
+  line-height: 6vh;
+}
+
+.section-title h2 {
+  font-size: 35px;
+  text-transform: capitalize;
+}
+
+.section-title h2::before {
+  content: attr(data-title);
+  display: block;
+  font-size: 24px;
+  color: var(--main-color);
+  font-family: var(--title-font);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+section {
+  overflow: hidden;
+}
+
+/* ----------------
+Button 
+-----------------*/
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: transparent;
+  border-radius: 30px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  color: var(--main-color);
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1.5;
+  user-select: none;
+  border: none;
+}
+
+.btn-default {
+  border: 2px solid var(--main-color);
+}
+
+.btn-default:hover {
+  color: var(--white);
+  background-color: #f1a501;
+}
+
 /* -----------------
 Body Style  
 -------------------*/
@@ -27,81 +143,95 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  /* font-family: "Poppins", sans-serif; */
-  /* font-family: "Volkhov", serif; */
 }
 
 /* -----------------
 Header Area CSS
 -------------------*/
-.header-area {
-  background-image: url("../img/background.png");
-  height: 89vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Header background image */
+
+.main__content__area {
   position: relative;
-  top: -1rem;
 }
 
-.nav,
-.logo {
-  margin-top: 16px;
+.header-area::before {
+  content: url(../img/background.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
 
-.nav-item {
-  margin: 0 25px;
+/* Navbar */
+.main__menu ul li {
+  display: inline-block;
 }
 
-.nav-item:nth-last-child(2) {
-  border: 2px solid black;
+.main__menu ul li a {
+  display: block;
+  margin: 7px 18px;
+  padding: 9px;
+  color: var(--main-color);
+  font-size: 17px;
+}
+
+.main__menu ul li a:hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
+
+.main__menu ul li:nth-last-child(2) a {
+  border: 2px solid var(--main-color);
   border-radius: 5px;
 }
 
-.nav-link {
-  color: #323232;
-}
+/* Hero Area  */
 
-.nav-link:hover {
-  color: #fff;
-  background-color: black;
-}
-
-.header-img img {
-  text-align: center;
-}
-
-.head-text {
+.hero-area {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 
-.head-text-title {
-  color: tomato;
+.text-title {
+  color: #df6951;
+  font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 5px;
 }
 
-.head-text h1 {
-  font-family: "Volkhov", serif;
-  font-size: 80px;
-  margin-bottom: 10px;
+.hero-text {
+  width: 40%;
+  padding: 0 15px 0 0;
 }
 
-.head-text p {
-  text-align: justify;
+.hero-img {
+  width: 60%;
+  padding: 0 15px 0 0;
 }
 
-.text-rib {
+.hero-text h1 {
+  font-size: 65px;
+  font-family: var(--title-font);
+  margin: 0 0 15px 0;
+}
+
+.text__decore {
   position: relative;
 }
 
-.decor-line {
+.text__decore::before {
+  content: url(../img/textline.png);
   position: absolute;
-  margin: 75px 0 0 -265px;
+  display: inline-block;
+  margin-left: -60px;
+  margin-top: 13px;
+  transform: scale(0.85);
   z-index: -1;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
 }
 
 /* -----------------

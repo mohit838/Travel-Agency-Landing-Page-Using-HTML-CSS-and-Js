@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS n Js-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
     <!-- FontAwesome -->
     <link
       rel="stylesheet"
@@ -22,21 +19,21 @@
     <title>Travel Agency Landing Page</title>
   </head>
   <body>
-    <main>
+    <main class="main__content__area">
       <!-- Header Area  -->
       <header class="header-area">
         <div class="container">
-          <div class="row mt-3">
-            <div class="col-md-2">
-              <div class="logo">
-                <a href="index.html"
-                  ><img src="assets/img/logo.png" class="img-fluid" alt="logo"
-                /></a>
-              </div>
+          <!-- Navbar for Header Menu  -->
+          <div class="row justify-content-space-between align-items-center">
+            <div class="logo">
+              <a href="index.html"
+                ><img src="assets/img/logo.png" alt="logo"
+              /></a>
             </div>
-            <div class="col-md-10">
-              <nav class="navbar-expand-lg">
-                <ul class="nav justify-content-end">
+
+            <div class="main__menu">
+              <nav class="navbar">
+                <ul>
                   <li class="nav-item">
                     <a class="nav-link" href="#destination">Destination</a>
                   </li>
@@ -56,41 +53,39 @@
                     <a class="nav-link" href="#signup">Sign Up</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#dropdown"
-                      >EN <i class="fa-solid fa-chevron-down"></i
+                    <a class="nav-link" href="">
+                      EN <i class="fa-solid fa-chevron-down"></i
                     ></a>
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
+          <!-- Navbar End  -->
 
-          <div class="row mt-5">
-            <div class="col-md-5 head-text">
-              <span class="head-text-title"
-                >BEST DESTINATIONS AROUND THE WORLD</span
-              >
-              <h1>
-                Travel,
-                <span class="text-rib"
-                  >enjoy
-                  <img
-                    src="assets/img/textline.png"
-                    class="decor-line"
-                    alt="decor-line"
-                /></span>
-                <br />
-                live a new <br />
-                and full life
-              </h1>
-              <p>
-                Built Wicket longer admire do barton vanity itself do in it.
-                Preferred to sportsmen it engrossed listening. Park gate sell
-                they west hard for the.
-              </p>
-            </div>
-            <div class="col-md-7 header-img">
-              <img src="assets/img/people.png" class="img-fluid" alt="people" />
+          <!-- Hero Text and Image Area  -->
+          <div class="row">
+            <div class="hero-area">
+              <div class="hero-text">
+                <span class="text-title"
+                  >BEST DESTINATIONS AROUND THE WORLD</span
+                >
+                <h1>
+                  Travel,
+                  <span class="text__decore">enjoy</span><br />
+                  and live a new<br />
+                  and full life
+                </h1>
+                <p>
+                  Built Wicket longer admire do barton vanity itself do in it.
+                  Preferred to sportsmen it engrossed listening. Park gate sell
+                  they west hard for the.
+                </p>
+              </div>
+
+              <div class="hero-img">
+                <img src="assets/img/people.png" alt="people" />
+              </div>
             </div>
           </div>
         </div>
@@ -127,7 +122,6 @@
     </main>
 
     <!-- Js file -->
-    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
